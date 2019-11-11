@@ -1,0 +1,111 @@
+ExeStack:
+(bool a)
+((int v);(a=true;(IF (2>3 ) THEN ( v=2) ELSE (v=3 );print(v))))
+
+SymTable:
+
+Output:
+
+
+
+ExeStack:
+((int v);(a=true;(IF (2>3 ) THEN ( v=2) ELSE (v=3 );print(v))))
+
+SymTable:
+a --> false
+
+Output:
+
+
+
+ExeStack:
+(int v)
+(a=true;(IF (2>3 ) THEN ( v=2) ELSE (v=3 );print(v)))
+
+SymTable:
+a --> false
+
+Output:
+
+
+
+ExeStack:
+(a=true;(IF (2>3 ) THEN ( v=2) ELSE (v=3 );print(v)))
+
+SymTable:
+a --> false
+v --> 0
+
+Output:
+
+
+
+ExeStack:
+a=true
+(IF (2>3 ) THEN ( v=2) ELSE (v=3 );print(v))
+
+SymTable:
+a --> false
+v --> 0
+
+Output:
+
+
+
+ExeStack:
+(IF (2>3 ) THEN ( v=2) ELSE (v=3 );print(v))
+
+SymTable:
+a --> true
+v --> 0
+
+Output:
+
+
+
+ExeStack:
+IF (2>3 ) THEN ( v=2) ELSE (v=3 )
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Output:
+
+
+
+ExeStack:
+v=3
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Output:
+
+
+
+ExeStack:
+print(v)
+
+SymTable:
+a --> true
+v --> 3
+
+Output:
+
+
+
+ExeStack:
+
+SymTable:
+a --> true
+v --> 3
+
+Output:
+3
+
+
+
